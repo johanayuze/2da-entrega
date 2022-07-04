@@ -25,6 +25,22 @@ nav img{
 .bg-green{
 	background-color: lightgreen;
 }
+
+@keyframes animacion{
+	0%{width: 50%}
+	25%{width: 100%; background-color: black}
+	50%{width: 150%}
+	75%{width: 100%; background-color: white}
+	100%{width: 50%; background-color: black;}
+}
+
+.animacion{
+	animation-name: animacion;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease-in;
+	animation-duration: 5s;
+	animation-delay: 0s;
+}
 .texto-principal{
 	font-size: 2rem;
 	color: #0ABD2C;
