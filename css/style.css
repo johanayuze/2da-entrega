@@ -1,12 +1,12 @@
 
-#botonera{
+.botonera{
 	background-color: lightgreen;
 }
 
-#botonera a:hover{
+.botonera a:hover{
 	color: white;
 	text-decoration: underline;
-	font-size: 2rem;
+	font-size: 1.5rem;
 }
 
 nav img{
@@ -17,9 +17,6 @@ nav img{
 	background: linear-gradient(to right,green, black,green);
 }
 
-.titulo{
-	color: #0ABD2C;
-	}
 
 
 .bg-green{
@@ -27,40 +24,39 @@ nav img{
 }
 
 @keyframes animacion{
-	0%{width: 50%}
-	25%{width: 100%; background-color: black}
-	50%{width: 150%}
-	75%{width: 100%; background-color: white}
-	100%{width: 50%; background-color: black;}
+	0%{max-width: 50%}
+	25%{max-width: 100%; background-color: black}
+	50%{max-width: 150%}
+	75%{max-width: 100%; background-color: white}
+	100%{max-width: 50%; background-color: black;}
 }
 
-.animacion{
+.article__titulo-animacion{
 	animation-name: animacion;
 	animation-iteration-count: infinite;
 	animation-timing-function: ease-in;
 	animation-duration: 5s;
 	animation-delay: 0s;
 }
-.texto-principal{
+.article__textoprincipal{
 	font-size: 2rem;
 	color: #0ABD2C;
 	
 }
-.xq{list-style: none;}
+.section__list{list-style: none;}
 
 
-.titulo__servicios{
+.header__titulo{
 	color: #0ABD2C;
 	text-transform: uppercase;
 }
-.contacto__h1{
-	color: green;
-}
+
 
 .flex-container{
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
+	align-items: center;
 	height: 100%;
 
 }
