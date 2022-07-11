@@ -1,0 +1,42 @@
+
+// mixin - lo utilice en _navBar
+
+@mixin d-flex($justify,$align){
+	display: flex;
+	justify-content: $justify;
+	align-items: $align
+}
+
+//map - lo utilice en varias partes de la pagina. 
+//por ejemplo para los H1, H2 Y H3 en _commons
+
+
+$paleta:(
+	'uno': #486821,
+    'dos': #313727,
+    'tres':#9EB170,
+    'cuatro':#3A5217,
+    'cinco': #70972B,
+    'seis': white,
+    'siete':black,
+    'ocho': grey,
+    'nueve': lightgreen,
+    'diez': #029C1B,
+	);
+
+// extend
+
+.index__p{
+	background-color:map-get($map:$paleta, $key: 'diez');
+	color: map-get($map:$paleta, $key: 'seis');
+	line-height: 3rem;
+	font-size:$textLg;
+	border: groove white 10px;
+}
+
+
+.quienessomos__p{
+	@extend .index__p;
+	font-size: $textMd;
+	line-height: 2rem;
+}

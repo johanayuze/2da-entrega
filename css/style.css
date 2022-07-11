@@ -1,62 +1,63 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+.index__p, .quienessomos__p {
+  background-color: #029C1B;
+  color: white;
+  line-height: 3rem;
+  font-size: 1.6em;
+  border: groove white 10px; }
 
-.botonera{
-	background-color: lightgreen;
-}
+.quienessomos__p {
+  font-size: 1em;
+  line-height: 2rem; }
 
-.botonera a:hover{
-	color: white;
-	text-decoration: underline;
-	font-size: 1.5rem;
-}
+.botonera {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: green;
+  padding: 4px 30px; }
+  .botonera img {
+    width: 150px; }
+  .botonera ul {
+    display: flex; }
+    .botonera ul li {
+      list-style: none;
+      margin-right: 10px; }
+      .botonera ul li a {
+        color: #FCFAFA;
+        font-size: 1em;
+        text-decoration: none;
+        font-family: "Nunito", sans-serif; }
+        .botonera ul li a:hover {
+          color: #1A1A1A;
+          text-decoration: underline; }
 
-nav img{
-	width: 20%;
-}
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #70972B; }
+  footer img {
+    padding: 10px;
+    background-color: #FCFAFA; }
+  footer .footer__p {
+    color: #FCFAFA;
+    margin-bottom: 10px;
+    font-size: 1em; }
 
-.gradient{
-	background: linear-gradient(to right,green, black,green);
-}
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif; }
 
+h1, h2, h3 {
+  color: white;
+  background-color: lightgreen;
+  text-transform: uppercase;
+  font-size: 1.6em; }
 
+.quienessomos__h2 {
+  background-color: #70972B; }
 
-.bg-green{
-	background-color: lightgreen;
-}
-
-@keyframes animacion{
-	0%{max-width: 50%}
-	25%{max-width: 100%; background-color: black}
-	50%{max-width: 150%}
-	75%{max-width: 100%; background-color: white}
-	100%{max-width: 50%; background-color: black;}
-}
-
-.article__titulo-animacion{
-	animation-name: animacion;
-	animation-iteration-count: infinite;
-	animation-timing-function: ease-in;
-	animation-duration: 5s;
-	animation-delay: 0s;
-}
-.article__textoprincipal{
-	font-size: 2rem;
-	color: #0ABD2C;
-	
-}
-.section__list{list-style: none;}
-
-
-.header__titulo{
-	color: #0ABD2C;
-	text-transform: uppercase;
-}
-
-
-.flex-container{
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	height: 100%;
-
-}
+.contacto__formulario {
+  background-color: #9EB170; }

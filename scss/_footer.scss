@@ -1,0 +1,17 @@
+footer{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: map-get($map:$paleta, $key: 'cinco');
+	img{
+		padding: 10px;
+		background-color: $white;
+		}
+	.footer__p{
+		color:$white;
+		margin-bottom: 10px;
+		font-size:$textMd;
+		
+		} 
+	
+}
